@@ -8,8 +8,20 @@ print("Result: ", x + y)
 a = float(input("What's a? "))
 b = float(input("What's b? "))
 
-c = round(a+b)
+"""
+#Round off the result to 2 significant digits after the floating point
+c = round(a / b, 2)
+
+
+#Insert a comma separator
 print(f'{c:,}')
+"""
+
+c = (a / b)
+
+#Round off the result to 2 significant digits after the floating point
+print(f'{c:.2f}')
+
 """
 x = (input("What's x? "))
 y = (input("What's y? "))

@@ -18,5 +18,9 @@ print(name, end=".\n")
 print(f'Hi, {name}')
 
 #Trim whitespaces from input string
-name = name.strip()
+name = name.strip().title()
 print(name)
+
+#Detect space and split input
+first, last = name.split(' ')
+print(f'First name: {first}\nLast name: {last}')
